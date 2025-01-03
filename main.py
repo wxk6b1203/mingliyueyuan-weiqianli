@@ -1,19 +1,6 @@
-# This is a sample Python script.
-import json
-
-import fitz
+#!/usr/bin/env python
 import pymupdf
 from PIL import Image
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-import pandas as pd
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 def main():
@@ -116,8 +103,8 @@ def main():
     toc.append([2, '干冲论', 115])
     toc.append([2, '支三合论', 116])
     toc.append([2, '支六合论', 117])
-
-
+    toc.append([2, '支方论', 118])
+    toc.append([2, '支冲论', 118])
     # 保存
     doc.set_toc(toc)
     doc.ez_save('output.pdf')
@@ -127,5 +114,3 @@ def main():
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     main()
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
