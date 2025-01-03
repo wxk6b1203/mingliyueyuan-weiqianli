@@ -113,6 +113,9 @@ def main():
     toc.append([2, '天干论', 112])
     toc.append([2, '地支论', 113])
     toc.append([2, '干合论', 114])
+    toc.append([2, '干冲论', 115])
+    toc.append([2, '支三合论', 116])
+    toc.append([2, '支六合论', 117])
 
 
     # 保存
